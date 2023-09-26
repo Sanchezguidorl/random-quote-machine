@@ -37,10 +37,10 @@ const handleTransition=()=>{
 <FontAwesomeIcon icon={faQuoteLeft} />{props.quote.text}
       </blockquote>
 <div id="author" className={`${quoteTransition && "fadeOut"}`}>
-    <span>-{props.quote.author}</span>
+    <span>- {props.quote.author}</span>
 </div>
-<a href="" id="tweet-quote" className="button" style={{backgroundColor: props.bgColor}}><FontAwesomeIcon icon={faXTwitter} /></a>
-<a href="" className="button" style={{backgroundColor: props.bgColor}}><FontAwesomeIcon icon={faTumblr} /></a>
+<a href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${props.quote.text}%22%20${props.quote.author}`} target="_blank" id="tweet-quote" className="button" style={{backgroundColor: props.bgColor}}><FontAwesomeIcon icon={faTumblr} /></a>
+<a href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${props.quote.author}&content=${props.quote.text}www.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`} target="_blank" className="button" style={{backgroundColor: props.bgColor}}><FontAwesomeIcon icon={faXTwitter} /></a>
 <button id="new-quote" className="button" style={{backgroundColor: props.bgColor}} onClick={handleTransition}>
     Next Quote
 </button>
