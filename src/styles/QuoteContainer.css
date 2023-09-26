@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@400;500;600;800;900&family=Raleway:ital,wght@0,100;0,400;0,600;1,100&display=swap');
+
+
+#quote-box{
+    background-color: #fff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 50px;
+}
+
+blockquote svg{
+    margin-right: 16px;
+}
+
+#text{
+    text-align: center;
+font-family:'Raleway', sans-serif;
+font-size: 28px;
+transition: 1s;
+margin: 0;
+margin-bottom: 26px;
+
+}
+
+#author{
+    width: 100%;
+    transition: 1s;
+    font-size: 18px;
+text-align: end;
+}
+
+#quote-box a{
+    text-decoration: none;
+}
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; 
+    font-size: 14px;
+    margin-right: 8px;
+    transition: 1s;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 18px;
+    border: none;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+#new-quote{
+    float: right;
+    margin-right: 0;
+}
+
+.fadeOut{  opacity: 1;
+    animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
