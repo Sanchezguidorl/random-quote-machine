@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import { useEffect } from "react";
+
 
 interface PropsInter {
   bgColor: string;
@@ -18,7 +18,6 @@ interface PropsInter {
 function QuoteContainer(props: PropsInter) {
   const [quoteTransition, setQuoteTransition] = useState(false);
 
-  useEffect(() => {
     if (quoteTransition === true) {
       props.next();
       console.log(quoteTransition);
@@ -26,7 +25,6 @@ function QuoteContainer(props: PropsInter) {
         setQuoteTransition(false);
       }, 1000);
     }
-  }, [quoteTransition]);
 
   const handleTransition = () => {
     setQuoteTransition(true);
