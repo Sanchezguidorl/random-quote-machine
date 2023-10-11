@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 450px;
     padding: 40px 50px;
+    margin: 0 10px;
 }
 
 blockquote svg{
@@ -50,6 +51,7 @@ text-align: end;
 #new-quote{
     float: right;
     margin-right: 0;
+    text-transform: uppercase;
 }
 
 .fadeOut{  opacity: 1;
