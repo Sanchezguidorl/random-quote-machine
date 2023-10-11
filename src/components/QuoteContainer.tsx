@@ -19,14 +19,13 @@ function QuoteContainer(props: PropsInter) {
   const [quoteTransition, setQuoteTransition] = useState(false);
 
     if (quoteTransition === true) {
-      props.next();
-      console.log(quoteTransition);
-      setTimeout(() => {
+        setTimeout(() => {
         setQuoteTransition(false);
       }, 1000);
     }
 
   const handleTransition = () => {
+    props.next();
     setQuoteTransition(true);
   };
 
